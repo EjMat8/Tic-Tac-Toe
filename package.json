@@ -4,7 +4,9 @@
   "description": "Practice using html css/sass js",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "devserver": "live-server",
+    "watch:scss": "node-sass src/sass/main.scss src/css/style.css -w",
+    "start": "npm-run-all --parallel watch:scss devserver"
   },
   "repository": {
     "type": "git",
@@ -16,5 +18,8 @@
     "url": "https://github.com/EjMat8/Tic-Tac-Toe/issues"
   },
   "homepage": "https://github.com/EjMat8/Tic-Tac-Toe#readme",
-  "devDependencies": {}
+  "devDependencies": {
+    "node-sass": "^5.0.0",
+    "npm-run-all": "^4.1.5"
+  }
 }
