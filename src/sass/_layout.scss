@@ -1,0 +1,10 @@
+.container {
+  //   background-color: orangered;
+  border: 1rem solid var(--color-primary);
+  max-width: 60rem;
+  height: 60rem;
+  margin: 8rem auto;
+  display: grid;
+  grid-template-rows: 1fr 1rem 1fr 1rem 1fr;
+  grid-template-columns: 1fr 1rem 1fr 1rem 1fr;
+}

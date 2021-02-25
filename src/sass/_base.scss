@@ -1,0 +1,36 @@
+:root {
+  --color-primary: #fed330;
+
+  --color-secondary: #305bfe;
+  --color-secondary-light: #6383fe;
+  --color-secondary-dark: #0135fa;
+
+  --color-x: #ff4d73;
+  --color-circle: #30c2fe;
+
+  --color-grey-light: #fffbeb;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Press Start 2P", cursive;
+  color: var(--color-grey-light);
+  line-height: 1.6;
+  background-image: radial-gradient(
+    var(--color-secondary-light),
+    var(--color-secondary-dark)
+  );
+  min-height: 100vh;
+}
